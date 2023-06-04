@@ -7,3 +7,38 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : Daniel
 */
 
+#audio{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    background: black;
+    color: #fdf5e6;
+    witdh: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.home{
+    font-size: 26px;
+}

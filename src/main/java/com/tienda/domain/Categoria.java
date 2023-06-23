@@ -1,9 +1,9 @@
 package com.tienda.domain;
 
-import jakarta.persistence.*;
+
 import java.io.Serializable;
+import javax.persistence.*;
 import lombok.Data;
-import nonapi.io.github.classgraph.json.Id;
 
 @Data
 @Entity

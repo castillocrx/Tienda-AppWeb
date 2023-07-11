@@ -1,14 +1,20 @@
--------------------index.html-------------
+
 
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns="http://www.w3.org/1999/xhtml">
     <head th:replace="~{layout/plantilla :: head}">
-        <title>TechShop</title>        
+        <title>Tienda</title>        
     </head>
+     <div style="background-color: #fdf5e6">
+        <div style="border: 4px solid #ffb819">
     <body>
         <header th:replace="~{layout/plantilla :: header}"/>
-        <div>Hola</div>
+        <article style="text-align: center">
+                        <h1 style="font-size: 60px">Tienda de Musica</h1>               
+                        <p style ="font-size: 20px">Bienvenido a la tienda</p>   
+                    </article>
+                </header> 
         <footer th:replace="~{layout/plantilla :: footer}"/>          
     </body> 
 </html>

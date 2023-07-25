@@ -1,9 +1,17 @@
 package com.tienda.domain;
 
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 import java.io.Serializable;
 import java.util.List;
-import javax.persistence.*;
+
 import lombok.Data;
 
 @Data
@@ -18,9 +26,6 @@ public class Categoria implements Serializable {
     @Column(name="id_categoria")
     private Long idCategoria;
     private String descripcion;
-    private String detalle;
-    private double precio;
-    private int existencias;
     private String rutaImagen;
     private boolean activo;
     
@@ -33,4 +38,6 @@ public class Categoria implements Serializable {
         this.descripcion = categoria;
         this.activo = activo;
     }
+    
+    public Categoria(){}
 }
